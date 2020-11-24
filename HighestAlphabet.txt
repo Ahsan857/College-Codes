@@ -1,0 +1,40 @@
+//HighestChar
+
+//DECLARATION
+DECLARE str1: STRING
+DECALRE alpha: STRING
+DECLARE hcount: INTEGER
+DECLARE count: INTEGER
+DECLARE mychar: CHAR
+DECLARE haplha: CHAR
+DECLARE z: INTEGER
+
+
+//INITIALIZATION
+str1 <- ""
+alpha <- "abcdefghijklmnopqrstuvwxyz"
+hcount <- -1000
+count <- 0
+mychar <- ''
+hcount <- ''
+z <- 0
+
+PRINT "Type your string: "
+INPUT str1
+str1 <- LOWER(str1)
+FOR x <- 1 TO 26
+    count <- 0
+    mychar <- MID(alpha,x,1)
+    z <- InStr(str1,mychar)
+    WHILE y > 0
+        count=count + 1
+        z <- z + 1
+        z <- Locate(z,str1,mychar)
+    END WHILE
+    IF count > hcount
+        hcount <- count
+        hchar <- mychar
+    END IF
+NEXT X
+PRINT "Alphabet which occured the most times : " & hchar
+PRINT "Alphabet occurred : " & hcount
