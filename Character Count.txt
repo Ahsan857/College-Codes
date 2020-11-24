@@ -1,0 +1,34 @@
+//CHARACTER COUNT
+//DECLARATION
+DECLARE s:STRING
+DECLARE mchar: CHAR
+DECLARE charcount: INTEGER
+DECLARE x: INTEGER
+
+//INITIALIZATION
+
+s=""
+
+mchar=''
+
+strcounter=0
+
+x=0
+
+PRINT"Type your string : "
+
+INPUT s
+PRINT "Which character you want to count? : "
+
+INPUT mchar
+
+
+FOR x=1 TO LEN(s)
+
+    IF mchar=LOWER(MID(s,x,1))
+
+        charcount=charcount+1
+    ENDIF
+NEXT X 
+
+PRINT "The number of '" & mchar & "' in string is: " & charcount

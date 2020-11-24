@@ -1,0 +1,24 @@
+//both_ends
+//DECLARATION
+DECLARE s:STRING
+
+
+//INITIALIZATION
+
+
+s=""
+
+PRINT"Type your string please : "
+
+
+INPUT s
+
+IF LEN(s) > 4
+
+
+    PRINT "Final String : " & LEFT(s,2) & RIGHT(s,2)
+ELSE
+
+    PRINT"Final String : " & s"
+
+END IF

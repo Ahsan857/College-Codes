@@ -1,0 +1,25 @@
+//DECLARATION
+DECLARE Y: STRING
+DECALRE X: STRING
+DECLARE a: STRING
+DECLARE b: STRING
+
+
+//INITIALIZATION
+a=""
+b=""
+Y=""
+X=""
+
+PRINT"Enter string a: "
+INPUT a
+PRINT"Enter string b: "
+INPUT b
+
+X=LEFT(a,2)
+Y=LEFT(b,2)
+b=X + MID(b,3,LEN(b))
+a= Y + MID(a,3,LEN(a))
+
+
+PRINT "The output string is:" & a & " " & b)

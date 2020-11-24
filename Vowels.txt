@@ -1,0 +1,44 @@
+//DECLARATION
+DECLARE Y:STRING
+DECLARE a:STRING
+DECLARE e:STRING
+DECLARE i:STRING
+DECLARE o:STRING
+DECLARE u:STRING
+DECLARE mychar:CHAR
+DECLARE tvowel:INTEGER
+
+//INITIALIZATION
+Y=""
+a=""
+e=""
+i=""
+o=""
+u=""
+mchar=''
+voweltotal=0
+
+PRINT"Type your string: "
+INPUT s
+
+FOR X = 1 TO LEN(Y)
+    mychar=LOWER(MID(Y,x,1))
+    IF mchar='a'
+        a=a+1
+    ELSEIF mchar='e'
+        e=e+1 
+    ELSEIF mchar='i'
+        i=i+1            
+    ELSEIF mchar='o'
+        o=o+1            
+    ELSEIF mchar='u'
+        u=u+1            
+    ENDIF       
+NEXTX
+tvowel=a+e+i+o+u
+PRINT"Number of each vowel in string: " & STR(tvowel)
+PRINT"a: " & STR(a)
+PRINT"e: " & STR(e)
+PRINT"i: " & STR(i)
+PRINT"o: " & STR(o)
+PRINT"u: " & STR(u)

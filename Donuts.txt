@@ -1,0 +1,15 @@
+//DECLARATION
+DECLARE s:INTEGER
+
+
+//INITIALIZATION
+s=0
+
+PRINT"How many donuts? : "
+INPUT s
+
+IF s < 10
+    PRINT"The number of donuts:", STR(s)
+ELSE
+    PRINT"The number of donuts: 'many' "
+END IF

@@ -1,0 +1,17 @@
+//DECLARATION
+DECLARE st1: STRING
+
+//INITIALIZATION
+st1=''
+
+PRINT"Input a string: "
+INPUT st1
+
+IF LEN(st1) < 3 THEN
+    IF LOWER(RIGHT(st1,3))<>"ing"
+        st1=st1 & "ing"
+    ELSE
+        st1=st1 & "ly"
+    END IF
+END IF
+PRINT("The output string is: " & st1)       
